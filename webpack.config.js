@@ -4,10 +4,18 @@ const NODE_ENV = process.env.NODE_ENV || 'development'; // константа п
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./home", // что будет входной точкой
+  //  entry: "./home", // что будет входной точкой? если она одна
+    context: __dirname + '/frontend', // специальная переменная относительно которой будет идти поиск модулей
+    entry: { // если же множественная то нам нужно указать явно все файлы для сборки ентрипоинт становиться обьектом!
+        home: "./home",
+        about: "./about",
+        common : "./common"
+    },
     output: {
-        filename: "build.js", //куда будет компилиться
-        library: 'home' // создаем глобальную переменную
+        path: __dirname + '/public', //указываем абсолютный путь к директории
+       // filename: "build.js", //куда будет компилиться если у нас 1 точка входу
+        filename: "[name].js", // специальная конструкция в которую будут собираться соответствующие файлы home = home.js
+        library: '[name]' // создаем глобальную переменную
     },
     watch: NODE_ENV == 'development', //следить за изминениями
     //задает опции для перезапуска сборки по умолчанию 300мс
@@ -15,11 +23,22 @@ module.exports = {
         aggregateTimeout: 100
     },
     devtool: NODE_ENV == 'development' ? "source-map" : null,
-    plugins: [
+    plugins: [   // https://webpack.github.io/docs/list-of-plugins.html
+        new webpack.NoErrorsPlugin(), // плагин для того что бы во время сборки с ошибками вебпак не гинерил файлы с ошибками
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
             LANG: JSON.stringify('ru')
-        })
+        }),
+        new webpack.optimize.CommonsChunkPlugin({ // создает файл в котором собирается дублирующийся код* webpack --display-modules
+            name : "common",
+            // minChunks: 2, // если в 2 файлах сборки используеться одинаковый код он уже будет его выносить
+            // по умолчанию не будет если хоть в одном не используеться
+            chunks: ['about', 'home'] //явно указываем откуда взять повторяющийся код и положить в файл common.js
+        }),
+        /*new webpack.optimize.CommonsChunkPlugin({ // можем использовать много раз для того тчо бы указать нужные файлы явно
+            name : "common-price",
+            chunks: ['price', 'order'] //выберем из этих страниц
+        })*/
     ],
     resolve: { //https://webpack.github.io/docs/configuration.html#resolve
         modulesDirectories: ['node_modules'], // говорит в какой папке искать модули
