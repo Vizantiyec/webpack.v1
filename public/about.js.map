@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./about.js"],"names":["exports","welcome"],"mappings":";;;;;AAAA;;AAEA;;;;;;AAEA,wBAAQ,OAAR,E,CAAkB;;AAElBA,SAAQC,OAAR,qB","file":"about.js","sourcesContent":["'use strict';\r\n\r\nimport welcome from './welcome';\r\n\r\nwelcome(\"about\"); //\r\n\r\nexports.welcome = welcome;\n\n\n/** WEBPACK FOOTER **\n ** ./about.js\n **/"],"sourceRoot":""}

@@ -1,0 +1,672 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "1.13.2",
+  "hash": "2af08323ed25aeee8e9c",
+  "time": 1510,
+  "publicPath": "/js/",
+  "assetsByChunkName": {
+    "about": [
+      "about.js",
+      "about.js.map"
+    ],
+    "app": [
+      "app.js",
+      "app.js.map"
+    ],
+    "common": [
+      "common.js",
+      "common.js.map"
+    ],
+    "home": [
+      "home.js",
+      "home.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "about.js",
+      "size": 417,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "app.js",
+      "size": 3964,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "2.2.js",
+      "size": 183,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "common.js",
+      "size": 4206,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js",
+      "size": 415,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "about.js.map",
+      "size": 380,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "app.js.map",
+      "size": 4179,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "2.2.js.map",
+      "size": 348,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "common.js.map",
+      "size": 4411,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js.map",
+      "size": 376,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 274,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js",
+        "about.js.map"
+      ],
+      "hash": "84cba3c149c4a05124b8",
+      "parents": [
+        3
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+          "name": "./about.js",
+          "index": 0,
+          "index2": 1,
+          "size": 274,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 1080,
+            "building": 322
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)(\"about\"); //\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+          "moduleName": "./about.js",
+          "loc": "",
+          "name": "about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 183,
+      "names": [
+        "app"
+      ],
+      "files": [
+        "app.js",
+        "app.js.map"
+      ],
+      "hash": "4a22fd8b906611fe524f",
+      "parents": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "name": "./app.js",
+          "index": 2,
+          "index2": 3,
+          "size": 183,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 23,
+            "building": 1346
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\ndocument.getElementById('login').onclick = function () {\n    require.ensure([], function (require) {\n        var login = require('./login');\n        login();\n    });\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "moduleName": "./app.js",
+          "loc": "",
+          "name": "app",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "extraAsync": false,
+      "size": 68,
+      "names": [],
+      "files": [
+        "2.2.js",
+        "2.2.js.map"
+      ],
+      "hash": "124626c74daa9d765c08",
+      "parents": [
+        1
+      ],
+      "modules": [
+        {
+          "id": 2,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\login.js",
+          "name": "./login.js",
+          "index": 3,
+          "index2": 2,
+          "size": 68,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "profile": {
+            "factory": 55,
+            "building": 38
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+              "module": "./app.js",
+              "moduleName": "./app.js",
+              "type": "cjs require",
+              "userRequest": "./login",
+              "loc": "5:20-38"
+            }
+          ],
+          "source": "'use strict';\n\nmodule.exports = function () {\n    alert('Login');\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "loc": "4:4-7:6",
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "moduleName": "./app.js",
+          "loc": "4:4-7:6",
+          "name": null,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 263,
+      "names": [
+        "common"
+      ],
+      "files": [
+        "common.js",
+        "common.js.map"
+      ],
+      "hash": "ada451a765d12daca7bf",
+      "parents": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\common.js",
+          "name": "./common.js",
+          "index": 4,
+          "index2": 4,
+          "size": 30,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            3
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 1080,
+            "building": 345
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nalert(\"HELLO\");"
+        },
+        {
+          "id": 1,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\welcome.js",
+          "name": "./welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 233,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            3
+          ],
+          "assets": [],
+          "issuer": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+          "profile": {
+            "factory": 18,
+            "building": 31
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+              "module": "./about.js",
+              "moduleName": "./about.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            },
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+              "module": "./home.js",
+              "moduleName": "./home.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            }
+          ],
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function (message) {\n    if (NODE_ENV == 'development') {\n        console.log(message);\n    }\n    alert('Welcome ' + message);\n};\n\n;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\common.js",
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\common.js",
+          "moduleName": "./common.js",
+          "loc": "",
+          "name": "common",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 273,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js",
+        "home.js.map"
+      ],
+      "hash": "f4e0aa2ba4b543dbf076",
+      "parents": [
+        3
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+          "name": "./home.js",
+          "index": 5,
+          "index2": 5,
+          "size": 273,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            4
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 1078,
+            "building": 340,
+            "dependencies": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)(\"home\"); //\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+      "name": "./about.js",
+      "index": 0,
+      "index2": 1,
+      "size": 274,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 1080,
+        "building": 322
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)(\"about\"); //\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 0,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+      "name": "./app.js",
+      "index": 2,
+      "index2": 3,
+      "size": 183,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 23,
+        "building": 1346
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\ndocument.getElementById('login').onclick = function () {\n    require.ensure([], function (require) {\n        var login = require('./login');\n        login();\n    });\n};"
+    },
+    {
+      "id": 0,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\common.js",
+      "name": "./common.js",
+      "index": 4,
+      "index2": 4,
+      "size": 30,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        3
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 1080,
+        "building": 345
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nalert(\"HELLO\");"
+    },
+    {
+      "id": 0,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+      "name": "./home.js",
+      "index": 5,
+      "index2": 5,
+      "size": 273,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        4
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 1078,
+        "building": 340,
+        "dependencies": 2
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)(\"home\"); //\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 1,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 233,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        3
+      ],
+      "assets": [],
+      "issuer": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+      "profile": {
+        "factory": 18,
+        "building": 31
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\about.js",
+          "module": "./about.js",
+          "moduleName": "./about.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\home.js",
+          "module": "./home.js",
+          "moduleName": "./home.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        }
+      ],
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function (message) {\n    if (NODE_ENV == 'development') {\n        console.log(message);\n    }\n    alert('Welcome ' + message);\n};\n\n;"
+    },
+    {
+      "id": 2,
+      "identifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\login.js",
+      "name": "./login.js",
+      "index": 3,
+      "index2": 2,
+      "size": 68,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+      "profile": {
+        "factory": 55,
+        "building": 38
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\openserver\\OpenServer\\domains\\webpackv1\\node_modules\\babel-loader\\index.js?presets[]=es2015!C:\\openserver\\OpenServer\\domains\\webpackv1/frontend\\app.js",
+          "module": "./app.js",
+          "moduleName": "./app.js",
+          "type": "cjs require",
+          "userRequest": "./login",
+          "loc": "5:20-38"
+        }
+      ],
+      "source": "'use strict';\n\nmodule.exports = function () {\n    alert('Login');\n};"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

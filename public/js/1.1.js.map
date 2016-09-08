@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./login.js"],"names":["module","exports","alert"],"mappings":";;;;;AAAA;;AAEAA,QAAOC,OAAP,GAAiB,YAAU;AACvBC,WAAM,OAAN;AACH,EAFD,C","file":"1.1.js","sourcesContent":["'use strict';\r\n\r\nmodule.exports = function(){\r\n    alert('Login');\r\n};\n\n\n/** WEBPACK FOOTER **\n ** ./login.js\n **/"],"sourceRoot":""}
